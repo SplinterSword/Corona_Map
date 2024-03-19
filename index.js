@@ -7,7 +7,6 @@ function updateMap() {
             rsp.data.forEach(element => {
                 latitude = element.latitude;
                 longitude = element.longitude;
-
                 cases = element.infected;
                 if (cases>255){
                     color = "rgb(255, 0, 0)";
@@ -29,3 +28,4 @@ function updateMap() {
 
 let interval = 20000;
 setInterval( updateMap, interval); 
+
